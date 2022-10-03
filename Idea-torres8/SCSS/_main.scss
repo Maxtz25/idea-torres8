@@ -1,0 +1,72 @@
+main {
+    
+    .titulo {
+    font-family: "titulodbz";
+    font-size: medium;
+
+}
+.texto {
+        font-family: "textoDbz";
+        font-size: medium;
+
+}
+    @mixin sizes($width, $height){
+        height: $height;
+        width: $width;
+    }
+                    .bton {
+                        @include sizes (100px,30px);
+                        border-radius: 10px;
+                        background-color: aqua;
+                        text-align: center;
+                        color: green;
+                        border: 1px solid black;
+
+                    }
+
+                   
+
+                
+    nav {
+       ul {
+           text-align: end;
+           font-size: large;
+           li {
+               display: inline-block;
+               background-color: yellow;
+               border: 1px solid $boton-color;
+               margin-bottom: auto;
+               
+               a {
+                .btn--personajes{
+                    @extend.bton;
+                    background-color: coral;
+                    color: brown;
+                }
+                .btn--escenasEpicas {
+                    @extend.bton;
+                    background-color: darkkhaki;
+                    color: darkred;
+                }
+                
+                   text-decoration: none;
+                   color: black;
+                   &:hover {
+                       background-color: black;
+                       color: $mi-color;
+                   }
+               }
+           }
+       }
+   }
+       img {
+           margin-left: 150px;
+           height: 400px;
+           width: 1000px;
+       }
+       .tamaño {
+        height: 240px;
+        width: 240px;
+       }
+       
+   }

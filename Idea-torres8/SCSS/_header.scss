@@ -1,0 +1,11 @@
+header {
+    img {
+        background-color: aquamarine;
+        margin-left: 50px;
+    }
+    h1 {
+        text-align: center;
+        text-decoration: underline $mi-color;
+        color: map-get($fuente,font3 );
+    }
+}

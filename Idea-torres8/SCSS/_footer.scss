@@ -1,0 +1,31 @@
+footer {
+    h2 {
+        color: map-get($fuente,font1);
+        font-size: xx-large; 
+    }
+    h3 {
+       
+        text-align: end;
+        color: map-get($fuente, font2 );
+        font-size: x-large;
+    }
+
+    div {
+        text-align: end;
+        a {
+            img {
+                margin: 5px;
+                padding: 5px;
+            }
+        }
+        
+        a { 
+            img {
+                margin: 5px;
+                padding: 5px;
+                
+            }
+        }
+    }
+    
+}
